@@ -98,6 +98,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- Fellowship registration form (front-end only demo) ---------- */
+  const fellowshipForm = document.getElementById('fellowship-form');
+  if (fellowshipForm) {
+    fellowshipForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = document.getElementById('fellowship-status');
+      status.textContent = "You're registered — watch your email for the link and schedule for the next Sunday session.";
+      status.classList.add('show', 'ok');
+      fellowshipForm.reset();
+    });
+  }
+
   /* ---------- Newsletter form (front-end only demo) ---------- */
   const newsletterForm = document.getElementById('newsletter-form');
   if (newsletterForm) {
