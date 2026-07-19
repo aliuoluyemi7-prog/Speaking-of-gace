@@ -457,6 +457,12 @@ h1, h2, h3, h4 {
   margin-bottom: 14px;
 }
 
+.featured-split-card {
+  display: flex;
+  gap: 0;
+  overflow: hidden;
+}
+
 /* ---------- Projects ---------- */
 .project-card {
   padding: 36px;
@@ -774,4 +780,11 @@ h1, h2, h3, h4 {
   .page-hero { padding: 140px 0 50px; }
   .section { padding: 70px 0; }
   .newsletter .container { flex-direction: column; align-items: flex-start; }
+  .featured-split-card {
+    flex-direction: column;
+  }
+  .featured-split-card .book-cover {
+    width: 100% !important;
+    min-height: 180px !important;
+  }
 }
